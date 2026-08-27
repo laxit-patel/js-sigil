@@ -1,0 +1,530 @@
+{
+    "vectors": [
+        {
+            "number": 0,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": []
+        },
+        {
+            "number": 1,
+            "digits": {
+                "ones": 1,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "digits": {
+                "ones": 2,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "digits": {
+                "ones": 3,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "diagDown",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "digits": {
+                "ones": 4,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "diagUp",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 20
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "digits": {
+                "ones": 5,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "digits": {
+                "ones": 6,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "digits": {
+                "ones": 7,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "digits": {
+                "ones": 8,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "digits": {
+                "ones": 9,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "digits": {
+                "ones": 0,
+                "tens": 1,
+                "hundreds": 0,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "tens",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 20
+                }
+            ]
+        },
+        {
+            "number": 100,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 1,
+                "thousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "hundreds",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 1000,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 1
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "thousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "number": 7323,
+            "digits": {
+                "ones": 3,
+                "tens": 2,
+                "hundreds": 3,
+                "thousands": 7
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "diagDown",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "diagDown",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 220
+                }
+            ]
+        },
+        {
+            "number": 9999,
+            "digits": {
+                "ones": 9,
+                "tens": 9,
+                "hundreds": 9,
+                "thousands": 9
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                220
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 220
+                }
+            ]
+        }
+    ]
+}

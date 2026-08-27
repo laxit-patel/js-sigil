@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "places": [
+    { "name": "ones",      "side": "right", "row": 0 },
+    { "name": "tens",      "side": "left",  "row": 0 },
+    { "name": "hundreds",  "side": "right", "row": 1 },
+    { "name": "thousands", "side": "left",  "row": 1 }
+  ],
+  "geometryDefaults": {
+    "rowHeight": 100,
+    "quadrantWidth": 70,
+    "stemX": 100,
+    "stemTopY": 20
+  },
+  "segments": [
+    { "key": "top",      "coords": [0, 0, 1, 0] },
+    { "key": "bottom",   "coords": [0, 1, 1, 1] },
+    { "key": "outer",    "coords": [1, 0, 1, 1] },
+    { "key": "diagDown", "coords": [0, 0, 1, 1] },
+    { "key": "diagUp",   "coords": [0, 1, 1, 0] }
+  ],
+  "digitMap": [0, 1, 2, 8, 16, 3, 4, 5, 6, 7]
+}

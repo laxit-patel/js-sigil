@@ -1,0 +1,814 @@
+{
+    "vectors": [
+        {
+            "rows": 1,
+            "number": 0,
+            "digits": {
+                "ones": 0,
+                "tens": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                120
+            ],
+            "segments": []
+        },
+        {
+            "rows": 1,
+            "number": 42,
+            "digits": {
+                "ones": 2,
+                "tens": 4
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                120
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "diagUp",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 20
+                }
+            ]
+        },
+        {
+            "rows": 1,
+            "number": 99,
+            "digits": {
+                "ones": 9,
+                "tens": 9
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                120
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 120
+                }
+            ]
+        },
+        {
+            "rows": 3,
+            "number": 0,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0,
+                "tenThousands": 0,
+                "hundredThousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                320
+            ],
+            "segments": []
+        },
+        {
+            "rows": 3,
+            "number": 10000,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0,
+                "tenThousands": 1,
+                "hundredThousands": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                320
+            ],
+            "segments": [
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 220
+                }
+            ]
+        },
+        {
+            "rows": 3,
+            "number": 100000,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0,
+                "tenThousands": 0,
+                "hundredThousands": 1
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                320
+            ],
+            "segments": [
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                }
+            ]
+        },
+        {
+            "rows": 3,
+            "number": 123456,
+            "digits": {
+                "ones": 6,
+                "tens": 5,
+                "hundreds": 4,
+                "thousands": 3,
+                "tenThousands": 2,
+                "hundredThousands": 1
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                320
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "diagUp",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "diagDown",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 170,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                }
+            ]
+        },
+        {
+            "rows": 3,
+            "number": 999999,
+            "digits": {
+                "ones": 9,
+                "tens": 9,
+                "hundreds": 9,
+                "thousands": 9,
+                "tenThousands": 9,
+                "hundredThousands": 9
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                320
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 170,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 30,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 320
+                }
+            ]
+        },
+        {
+            "rows": 4,
+            "number": 1000000,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0,
+                "tenThousands": 0,
+                "hundredThousands": 0,
+                "millions": 1,
+                "tenMillions": 0
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                420
+            ],
+            "segments": [
+                {
+                    "quadrant": "millions",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 170,
+                    "y2": 320
+                }
+            ]
+        },
+        {
+            "rows": 4,
+            "number": 10000000,
+            "digits": {
+                "ones": 0,
+                "tens": 0,
+                "hundreds": 0,
+                "thousands": 0,
+                "tenThousands": 0,
+                "hundredThousands": 0,
+                "millions": 0,
+                "tenMillions": 1
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                420
+            ],
+            "segments": [
+                {
+                    "quadrant": "tenMillions",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 30,
+                    "y2": 320
+                }
+            ]
+        },
+        {
+            "rows": 4,
+            "number": 12345678,
+            "digits": {
+                "ones": 8,
+                "tens": 7,
+                "hundreds": 6,
+                "thousands": 5,
+                "tenThousands": 4,
+                "hundredThousands": 3,
+                "millions": 2,
+                "tenMillions": 1
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                420
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "diagUp",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "diagDown",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "millions",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 420,
+                    "x2": 170,
+                    "y2": 420
+                },
+                {
+                    "quadrant": "tenMillions",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 30,
+                    "y2": 320
+                }
+            ]
+        },
+        {
+            "rows": 4,
+            "number": 99999999,
+            "digits": {
+                "ones": 9,
+                "tens": 9,
+                "hundreds": 9,
+                "thousands": 9,
+                "tenThousands": 9,
+                "hundredThousands": 9,
+                "millions": 9,
+                "tenMillions": 9
+            },
+            "stem": [
+                100,
+                20,
+                100,
+                420
+            ],
+            "segments": [
+                {
+                    "quadrant": "ones",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "ones",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 20,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 20
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "tens",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 20,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "hundreds",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 120,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 120
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "thousands",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 120,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 170,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "tenThousands",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 220,
+                    "x2": 170,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 220
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 30,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "hundredThousands",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 220,
+                    "x2": 30,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "millions",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 170,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "millions",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 420,
+                    "x2": 170,
+                    "y2": 420
+                },
+                {
+                    "quadrant": "millions",
+                    "segment": "outer",
+                    "x1": 170,
+                    "y1": 320,
+                    "x2": 170,
+                    "y2": 420
+                },
+                {
+                    "quadrant": "tenMillions",
+                    "segment": "top",
+                    "x1": 100,
+                    "y1": 320,
+                    "x2": 30,
+                    "y2": 320
+                },
+                {
+                    "quadrant": "tenMillions",
+                    "segment": "bottom",
+                    "x1": 100,
+                    "y1": 420,
+                    "x2": 30,
+                    "y2": 420
+                },
+                {
+                    "quadrant": "tenMillions",
+                    "segment": "outer",
+                    "x1": 30,
+                    "y1": 320,
+                    "x2": 30,
+                    "y2": 420
+                }
+            ]
+        }
+    ]
+}

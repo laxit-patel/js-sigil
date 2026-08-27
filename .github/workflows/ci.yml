@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['20.10', '20', '22', '24']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      # Zero dependencies and zero devDependencies -- node:test is built in,
+      # so there is nothing to install.
+      - name: Test
+        run: npm test
+
+  types:
+    name: Types match the implementation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # index.d.ts is hand-written, so nothing keeps it honest on its own.
+      # Type-check a file that exercises the public surface against it.
+      - name: Check the declarations
+        run: npx --yes -p typescript@5 tsc --noEmit --strict --target es2022 --lib es2022,dom --module nodenext --moduleResolution nodenext test/types.check.ts
+
+  package:
+    name: Package contents
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # model.json must ship: the encoder loads it, and a published package
+      # has no spec repo above it to fall back on.
+      - name: The tarball carries the model and the fixtures
+        run: |
+          set -e
+          npm pack --silent > /dev/null
+          tar -tzf laxit-sigil-*.tgz | sed 's|^package/||' | sort > shipped.txt
+          cat shipped.txt
+          for required in model.json fixtures/vectors.json src/encoder.js index.d.ts; do
+            grep -qx "$required" shipped.txt || { echo "MISSING from the tarball: $required"; exit 1; }
+          done
+
+  examples:
+    name: Examples still run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # Documentation that no longer runs is worse than none.
+      - name: Run the node example
+        run: |
+          set -e
+          node examples/node-basics.js 7323     > /dev/null
+          node examples/node-basics.js 20260827 > /dev/null

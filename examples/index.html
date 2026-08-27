@@ -1,0 +1,113 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Sigil — browser demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  Serve this directory and open the page — ES modules will not load over file://
+
+    npx --yes serve .        (from the repo root, then visit /examples/)
+    python3 -m http.server   (same idea)
+-->
+
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 15px/1.6 ui-sans-serif, system-ui, sans-serif;
+    margin: 0 auto; padding: 3rem 1.5rem; max-width: 60rem;
+    background: #fbfbfa; color: #1f1d2b;
+  }
+  @media (prefers-color-scheme: dark) { body { background: #16141f; color: #e8e6f0; } }
+  h1 { font-size: 1.6rem; margin: 0 0 .3rem; }
+  h2 { font-size: 1.05rem; margin: 3rem 0 .4rem; }
+  p.sub { color: #8a8598; margin: 0 0 1.5rem; }
+  section { margin-bottom: 1rem; }
+  sigil-glyph { width: 84px; height: 104px; color: #6f5fc0; }
+  .row { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-end; }
+  .tile { text-align: center; }
+  .tile code { display: block; font-size: 12px; color: #8a8598; margin-top: .4rem; }
+  input { font: inherit; padding: .45rem .6rem; border-radius: 7px;
+          border: 1px solid #c9c6d6; background: transparent; color: inherit; width: 12rem; }
+  canvas { max-width: 100%; height: auto; }
+  .err { color: #b4384e; font-size: 13px; min-height: 1.2em; }
+</style>
+
+<h1>Sigil in the browser</h1>
+<p class="sub">Every glyph on this page is drawn from <code>model.json</code> at runtime.</p>
+
+<h2>1. <code>&lt;sigil-glyph&gt;</code></h2>
+<p class="sub">The whole library as one element. It inherits the surrounding text colour.</p>
+<section class="row" id="gallery"></section>
+
+<h2>2. Live</h2>
+<p class="sub">Type any non-negative integer. Past 9999 the stem grows a row rather than splitting into two glyphs.</p>
+<section>
+  <input id="value" value="20260827" inputmode="numeric" autocomplete="off">
+  <div class="err" id="error"></div>
+  <div class="row" style="margin-top:1rem">
+    <sigil-glyph id="live" value="20260827" style="width:120px;height:200px"></sigil-glyph>
+  </div>
+</section>
+
+<h2>3. Canvas — many at once</h2>
+<p class="sub">
+  120 glyphs in a single canvas. This is why the Canvas renderer exists: one
+  path per glyph rather than a DOM node per line.
+</p>
+<section><canvas id="grid" width="1080" height="600"></canvas></section>
+
+<script type="module">
+  import '../src/renderers/element.js';
+  import { Encoder, drawGlyph } from '../src/index.js';
+
+  // --- 1. a gallery of elements ------------------------------------------
+  const gallery = document.getElementById('gallery');
+  for (const value of [0, 7, 42, 1234, 7323, 9999, 123456, 12345678]) {
+    const tile = document.createElement('div');
+    tile.className = 'tile';
+    tile.innerHTML = `<sigil-glyph value="${value}"></sigil-glyph><code>${value.toLocaleString()}</code>`;
+    gallery.append(tile);
+  }
+
+  // --- 2. live input ------------------------------------------------------
+  const input = document.getElementById('value');
+  const live = document.getElementById('live');
+  const error = document.getElementById('error');
+
+  live.addEventListener('sigil-error', (event) => {
+    error.textContent = event.detail?.message ?? 'cannot encode that';
+  });
+
+  input.addEventListener('input', () => {
+    error.textContent = '';
+    live.setAttribute('value', input.value.trim() || '0');
+  });
+
+  // --- 3. a canvas grid ---------------------------------------------------
+  const canvas = document.getElementById('grid');
+  const ctx = canvas.getContext('2d');
+  const encoder = new Encoder();
+
+  const cols = 15;
+  const rows = 8;
+  const cellW = canvas.width / cols;
+  const cellH = canvas.height / rows;
+
+  const ink = getComputedStyle(document.body).color;
+
+  for (let i = 0; i < cols * rows; i++) {
+    // Deterministic, so the grid is stable across reloads.
+    const value = (i * 811 + 37) % 10000;
+
+    drawGlyph(ctx, encoder, value, {
+      x: (i % cols) * cellW,
+      y: Math.floor(i / cols) * cellH,
+      width: cellW,
+      height: cellH,
+      stroke: ink,
+      strokeWidth: 5,
+      stemStrokeWidth: 6,
+      padding: 8,
+    });
+  }
+</script>

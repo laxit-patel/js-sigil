@@ -1,0 +1,27 @@
+{
+  "name": "@laxit/sigil",
+  "version": "1.0.0",
+  "description": "Turn an integer into one recognizable Cistercian-style glyph: SVG, Canvas, ASCII, or a <sigil-glyph> element.",
+  "keywords": ["cistercian", "glyph", "sigil", "svg", "canvas", "ascii", "identicon", "web-component"],
+  "license": "MIT",
+  "author": "laxit-patel <laxxitpatel@gmail.com>",
+  "homepage": "https://github.com/laxit-patel/js-sigil",
+  "repository": { "type": "git", "url": "git+https://github.com/laxit-patel/js-sigil.git" },
+  "bugs": "https://github.com/laxit-patel/js-sigil/issues",
+  "type": "module",
+  "engines": { "node": ">=20.10" },
+  "sideEffects": ["./src/renderers/element.js"],
+  "exports": {
+    ".": { "types": "./index.d.ts", "default": "./src/index.js" },
+    "./element": "./src/renderers/element.js",
+    "./model.json": "./model.json",
+    "./package.json": "./package.json"
+  },
+  "types": "./index.d.ts",
+  "files": ["src", "model.json", "fixtures", "index.d.ts", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "vectors": "node bin/vectors.js",
+    "vectors:check": "node bin/vectors.js --check"
+  }
+}
