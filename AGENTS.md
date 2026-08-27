@@ -1,6 +1,6 @@
 # AGENTS.md
 
-The JavaScript implementation of Sigil, published as `@laxit/sigil`. This is a
+The JavaScript implementation of Sigil, published as `@laxit-patel/sigil`. This is a
 standalone repo: it installs, tests and runs with nothing else checked out.
 
 **The spec lives in a separate repo**, [laxit-patel/sigil][spec] — read its

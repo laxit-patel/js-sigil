@@ -1,5 +1,5 @@
 {
-  "name": "@laxit/sigil",
+  "name": "@laxit-patel/sigil",
   "version": "1.0.0",
   "description": "Turn an integer into one recognizable Cistercian-style glyph: SVG, Canvas, ASCII, or a <sigil-glyph> element.",
   "keywords": [

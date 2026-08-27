@@ -4,7 +4,7 @@
 
 # 💜 Umbral Sigilstone — JavaScript
 
-**@laxit/sigil** — turns an integer into one recognizable Cistercian-style
+**@laxit-patel/sigil** — turns an integer into one recognizable Cistercian-style
 glyph, rendered as SVG, Canvas, ASCII, or a `<sigil-glyph>` element. Four
 digits by default, more on request.
 
@@ -12,10 +12,10 @@ digits by default, more on request.
 > and a handful of strokes, identical everywhere it is struck — in pixels, in
 > ink, or in cut metal.*
 
-[![npm](https://img.shields.io/npm/v/@laxit/sigil?logo=npm&logoColor=white&color=6f5fc0)](https://www.npmjs.com/package/@laxit/sigil)
+[![npm](https://img.shields.io/npm/v/%40laxit-patel%2Fsigil?logo=npm&logoColor=white&color=6f5fc0)](https://www.npmjs.com/package/@laxit-patel/sigil)
 [![CI](https://github.com/laxit-patel/js-sigil/actions/workflows/ci.yml/badge.svg)](https://github.com/laxit-patel/js-sigil/actions/workflows/ci.yml)
 [![Zero dependencies](https://img.shields.io/badge/dependencies-0-6f5fc0)](package.json)
-[![Bundle](https://img.shields.io/bundlephobia/minzip/@laxit/sigil?color=6f5fc0&label=min%2Bgzip)](https://bundlephobia.com/package/@laxit/sigil)
+[![Bundle](https://img.shields.io/bundlephobia/minzip/%40laxit-patel%2Fsigil?color=6f5fc0&label=min%2Bgzip)](https://bundlephobia.com/package/@laxit-patel/sigil)
 [![License](https://img.shields.io/badge/license-MIT-6f5fc0)](LICENSE)
 
 ---
@@ -33,7 +33,7 @@ This is the JavaScript implementation, one of several in the
 is [`SPEC.md`](https://github.com/laxit-patel/sigil/blob/main/SPEC.md).
 
 ```bash
-npm install @laxit/sigil
+npm install @laxit-patel/sigil
 ```
 
 ESM, Node 20.10+ and modern browsers. **No dependencies, and no
@@ -47,7 +47,7 @@ One `Encoder` resolves a number into a list of line segments. Each renderer
 draws that same list — so the sections below differ only in which one you call.
 
 ```js
-import { Encoder } from '@laxit/sigil';
+import { Encoder } from '@laxit-patel/sigil';
 
 const encoder = new Encoder();
 
@@ -62,7 +62,7 @@ The whole library as an element. It inherits the surrounding text colour, so it
 themes itself, and it sizes to the number without being told.
 
 ```js
-import '@laxit/sigil/element';
+import '@laxit-patel/sigil/element';
 ```
 
 ```html
@@ -82,7 +82,7 @@ The renderer the browser actually wanted. Drawing an avatar grid costs one path
 per glyph instead of a DOM node per line.
 
 ```js
-import { Encoder, drawGlyph } from '@laxit/sigil';
+import { Encoder, drawGlyph } from '@laxit-patel/sigil';
 
 const encoder = new Encoder();
 const ctx = canvas.getContext('2d');
@@ -96,7 +96,7 @@ after.
 ### SVG — a string you can inline or cache
 
 ```js
-import { Encoder, toSvg } from '@laxit/sigil';
+import { Encoder, toSvg } from '@laxit-patel/sigil';
 
 toSvg(new Encoder(), 7323, { stroke: 'currentColor', strokeWidth: 8 });
 ```
@@ -114,7 +114,7 @@ toSvg(new Encoder(), 7323, { stroke: 'currentColor', strokeWidth: 8 });
 ### ASCII — terminals and logs
 
 ```js
-import { Encoder, toAscii } from '@laxit/sigil';
+import { Encoder, toAscii } from '@laxit-patel/sigil';
 
 console.log(toAscii(new Encoder(), 7323));
 ```
