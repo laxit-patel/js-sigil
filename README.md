@@ -12,9 +12,11 @@ digits by default, more on request.
 > and a handful of strokes, identical everywhere it is struck — in pixels, in
 > ink, or in cut metal.*
 
+[![npm](https://img.shields.io/npm/v/@laxit/sigil?logo=npm&logoColor=white&color=6f5fc0)](https://www.npmjs.com/package/@laxit/sigil)
 [![CI](https://github.com/laxit-patel/js-sigil/actions/workflows/ci.yml/badge.svg)](https://github.com/laxit-patel/js-sigil/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/license-MIT-6f5fc0)](LICENSE)
 [![Zero dependencies](https://img.shields.io/badge/dependencies-0-6f5fc0)](package.json)
+[![Bundle](https://img.shields.io/bundlephobia/minzip/@laxit/sigil?color=6f5fc0&label=min%2Bgzip)](https://bundlephobia.com/package/@laxit/sigil)
+[![License](https://img.shields.io/badge/license-MIT-6f5fc0)](LICENSE)
 
 ---
 
@@ -207,6 +209,21 @@ byte-identical SVG and ASCII for the same input.
 Renderers consume `Encoder` output and **nothing else**; a test greps
 `src/renderers/` for `SegmentModel` and `Quadrant` to keep it that way, because
 that constraint is what makes new output formats and new language ports cheap.
+
+## Releasing
+
+Publishing is driven by a tag, so what ships is exactly what was tagged:
+
+```bash
+npm version patch          # or minor / major — writes package.json and tags
+git push --follow-tags
+```
+
+`.github/workflows/release.yml` then runs the suite, refuses to publish if the
+tag and `package.json` disagree, and publishes with
+[provenance](https://docs.npmjs.com/generating-provenance-statements) so the
+package can be traced back to this commit. It needs one repository secret,
+`NPM_TOKEN` — an npm **automation** token, which bypasses 2FA for CI.
 
 ## License
 
